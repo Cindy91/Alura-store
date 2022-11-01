@@ -1,0 +1,32 @@
+.app {
+    background: #f1f1f1;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "contenido"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.encabezado {
+    grid-area: encabezado;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+/*ver por qué mierda no aparece abajo.*/
+.footer { 
+    grid-area: footer;
+    background: #FDFDFD;    
+    color: #333333;
+    padding: 1rem;
+    align-items: baseline;
+    text-align: center;
+}
